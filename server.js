@@ -6,7 +6,7 @@ const fs = require("fs");
 const PORT = 5000;
 const homePage = fs.readFileSync("index.html");
 const aboutPage = fs.readFileSync("about.html");
-const homePage = fs.readFileSync("index.html");
+const contactPage = fs.readFileSync("contact.html");
 const notfoundPage = fs.readFileSync("404.html");
 
 const server = http.createServer((req, res) => {
