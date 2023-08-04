@@ -1,7 +1,7 @@
 // to run this script type 'node server.js' in the terminal.
 
 const http = require("http");
-const PORT = 5000
+const PORT = 5000;
 const server = http.createServer((req, res) => {
   if (req.url === "/about") res.end("About Me");
   else if (req.url === "/contact") res.end("Contact Me");
