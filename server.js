@@ -1,6 +1,7 @@
 // to run this script type 'node server.js' in the terminal.
 
 const http = require("http");
+const PORT = 5000
 const server = http.createServer((req, res) => {
   if (req.url === "/about") res.end("About Me");
   else if (req.url === "/contact") res.end("Contact Me");
@@ -11,6 +12,6 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(5500);
+server.listen(PORT);
 
-console.log("Server running at http://127.0.0.1:5500/");
+console.log(`Server running at http://127.0.0.1:${PORT}/`);
